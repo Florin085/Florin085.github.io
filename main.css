@@ -381,6 +381,18 @@ h5 {
   margin-top: 0;
   display: none; }
 
+#climber-intro {
+  background-image: url(4-images/app-bg.png); }
+
+#black-bird-intro {
+  background-image: url(4-images/black-bird-presentation.jpg); }
+
+#resort-intro {
+  background-image: url(4-images/resort-bg2.jpg); }
+
+#smart-city-intro {
+  background-image: url(4-images/smart-city-bg2.jpg); }
+
 .project-intro {
   height: 100vh;
   width: 100%;
@@ -388,46 +400,53 @@ h5 {
   background-size: cover;
   top: 0;
   overflow: hidden; }
-
-#black-bird-intro {
-  background-image: url(4-images/black-bird-presentation.jpg); }
-  #black-bird-intro .left-title-bg {
+  .project-intro .left-title-bg {
     height: 100vh;
     width: 35%;
     background-color: rgba(18, 18, 18, 0.85);
     position: absolute;
     overflow: hidden; }
-    #black-bird-intro .left-title-bg .title-rotate {
+    .project-intro .left-title-bg .title-rotate {
       margin: 0;
       transform: rotate(-90deg);
       position: relative;
       left: 10%;
       top: 45%; }
-      #black-bird-intro .left-title-bg .title-rotate h3 {
+      .project-intro .left-title-bg .title-rotate h3 {
         margin: 0;
         position: relative;
-        font-size: 4.5vw;
+        font-size: 4.3vw;
         line-height: 4.5vw;
         width: 100vh;
         float: left;
         display: inline-block;
         color: white;
-        font-family: font1; }
-      #black-bird-intro .left-title-bg .title-rotate h4 {
+        font-family: font1;
+        z-index: 96; }
+      .project-intro .left-title-bg .title-rotate h4 {
         color: #1FDBC5;
         font-size: 2vw;
         font-family: font3; }
-  #black-bird-intro .project-presentation-picture {
+  .project-intro .project-presentation-picture {
     height: 80vh;
     width: 38%;
     margin-left: 47%;
     bottom: 50px;
     position: absolute;
     background-size: 100% 100%; }
-  #black-bird-intro #black-bird-presentation-picture {
+  .project-intro #black-bird-presentation-picture {
     background-image: url(4-images/black-bird-imac-top.png); }
+  .project-intro #climber-presentation-picture img {
+    max-height: 80vh; }
+  .project-intro #resort-presentation-picture {
+    background-image: url(4-images/resort-imac-top.png); }
+  .project-intro #smart-city-presentation-picture {
+    background-image: url(4-images/smart-city-imac-top.png); }
 
 @media (max-width: 767px) {
+  #black-bird-intro {
+    background-image: url(4-images/black-bird-presentation.jpg); }
+
   .project-intro {
     height: 100vh;
     width: 100%;
@@ -435,22 +454,19 @@ h5 {
     background-size: cover;
     top: 0;
     overflow: hidden; }
-
-  #black-bird-intro {
-    background-image: url(4-images/black-bird-presentation.jpg); }
-    #black-bird-intro .left-title-bg {
+    .project-intro .left-title-bg {
       height: 100vh;
       width: 35%;
       background-color: rgba(18, 18, 18, 0.85);
       position: absolute;
       overflow: hidden; }
-      #black-bird-intro .left-title-bg .title-rotate {
+      .project-intro .left-title-bg .title-rotate {
         margin: 0;
         transform: rotate(-90deg);
         position: relative;
         left: 10%;
         top: 45%; }
-        #black-bird-intro .left-title-bg .title-rotate h3 {
+        .project-intro .left-title-bg .title-rotate h3 {
           margin: 0;
           position: relative;
           font-size: 4.5vw;
@@ -460,17 +476,18 @@ h5 {
           display: inline-block;
           color: white;
           font-family: font1; }
-        #black-bird-intro .left-title-bg .title-rotate h4 {
+        .project-intro .left-title-bg .title-rotate h4 {
           color: #1FDBC5;
           font-size: 2vw;
           font-family: font3; }
-    #black-bird-intro .project-presentation-picture {
+    .project-intro .project-presentation-picture {
       height: 80vh;
       width: 58%;
       margin-left: 37%;
       bottom: 10px;
       position: absolute;
-      background-size: 100% 100%; } }
+      background-size: 100% 100%;
+      overflow: hidden; } }
 .project-description {
   height: auto; }
   .project-description .container {
@@ -490,11 +507,14 @@ h5 {
         font-size: 18px;
         font-family: font3;
         line-height: 1.5; }
-        .project-description .container .row .col-sm-3 h4 a {
+        .project-description .container .row .col-sm-3 h4 span {
           text-align: center;
           color: white;
           font-size: 22px;
           font-family: font3; }
+          .project-description .container .row .col-sm-3 h4 span:hover {
+            text-decoration: underline;
+            cursor: pointer; }
   .project-description .project-info {
     height: auto;
     width: 60%;
@@ -573,6 +593,18 @@ h5 {
         margin-right: 2em;
         margin-bottom: 30px;
         font-family: font3; } }
+#next-project-climber {
+  background-image: url(4-images/app-bg.png); }
+
+#next-project-resort {
+  background-image: url(4-images/resort-bg2.jpg); }
+
+#next-project-smart-city {
+  background-image: url(4-images/smart-city-bg2.jpg); }
+
+#next-project-black-bird {
+  background-image: url(4-images/black-bird-presentation.jpg); }
+
 .project-screens {
   height: auto;
   width: 100%;
@@ -616,13 +648,20 @@ h5 {
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
     margin-bottom: 100px; }
     .project-screens .cta-see-website h4 {
-      text-align: center;
-      color: #1FDBC5;
-      font-family: font2;
-      font-weight: 100;
-      font-size: 5vw;
-      padding-top: 10px;
-      padding-bottom: 10px; }
+      text-align: center; }
+      .project-screens .cta-see-website h4 a {
+        text-align: center;
+        color: #1FDBC5;
+        font-family: font2;
+        font-weight: 100;
+        font-size: 5vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: inline-block; }
+        .project-screens .cta-see-website h4 a:hover {
+          cursor: pointer;
+          text-decoration: none;
+          color: #48e5d3; }
   .project-screens .project-back-to-top {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -683,7 +722,7 @@ h5 {
       width: calc(50% - 50px);
       margin-left: 50px;
       border: solid 1px #292929;
-      background-image: url(4-images/black-bird-presentation.jpg); }
+      background-image: url(4-images/back-to-home.jpg); }
       .project-screens .next-projects .left-project h4 {
         color: white;
         text-align: center;
@@ -698,7 +737,7 @@ h5 {
           .project-screens .next-projects .left-project h4 a i {
             font-size: 4vw; }
       .project-screens .next-projects .left-project .left-project-cover {
-        height: 175px;
+        height: 173px;
         position: relative;
         width: 100%;
         background-color: rgba(18, 18, 18, 0.7);
@@ -728,7 +767,7 @@ h5 {
           .project-screens .next-projects .right-project h4 a i {
             font-size: 4vw; }
       .project-screens .next-projects .right-project .right-project-cover {
-        height: 175px;
+        height: 173px;
         position: relative;
         width: 100%;
         background-color: rgba(18, 18, 18, 0.7);
@@ -780,13 +819,19 @@ h5 {
       box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
       margin-bottom: 100px; }
       .project-screens .cta-see-website h4 {
-        text-align: center;
-        color: #1FDBC5;
-        font-family: font2;
-        font-weight: 100;
-        font-size: 5vw;
-        padding-top: 10px;
-        padding-bottom: 10px; }
+        text-align: center; }
+        .project-screens .cta-see-website h4 a {
+          text-align: center;
+          color: #1FDBC5;
+          font-family: font2;
+          font-weight: 100;
+          font-size: 5vw;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          display: inline-block; }
+          .project-screens .cta-see-website h4 a:hover {
+            text-decoration: none;
+            color: #48e5d3; }
     .project-screens .project-back-to-top {
       margin-top: 50px;
       margin-bottom: 50px;
@@ -847,7 +892,7 @@ h5 {
         width: calc(50% - 10px);
         margin-left: 10px;
         border: solid 1px #292929;
-        background-image: url(4-images/black-bird-presentation.jpg); }
+        background-image: url(4-images/back-to-home.jpg); }
         .project-screens .next-projects .left-project h4 {
           color: white;
           text-align: center;
@@ -862,7 +907,7 @@ h5 {
             .project-screens .next-projects .left-project h4 a i {
               font-size: 4vw; }
         .project-screens .next-projects .left-project .left-project-cover {
-          height: 175px;
+          height: 173px;
           position: relative;
           width: 100%;
           background-color: rgba(18, 18, 18, 0.7);
@@ -892,7 +937,7 @@ h5 {
             .project-screens .next-projects .right-project h4 a i {
               font-size: 4vw; }
         .project-screens .next-projects .right-project .right-project-cover {
-          height: 175px;
+          height: 173px;
           position: relative;
           width: 100%;
           background-color: rgba(18, 18, 18, 0.7);
@@ -900,6 +945,222 @@ h5 {
           transition: all 0.5s ease; }
           .project-screens .next-projects .right-project .right-project-cover:hover {
             background-color: rgba(18, 18, 18, 0.5); } }
+.leave-site-overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(18, 18, 18, 0.3);
+  z-index: 300;
+  top: 0;
+  display: none; }
+  .leave-site-overlay .leave-site {
+    position: absolute;
+    height: auto;
+    width: 280px;
+    background-color: #121212;
+    top: 0;
+    border-radius: 25px;
+    border: solid 5px #1FDBC5;
+    left: calc(50% - 140px);
+    top: calc(50% - 143px); }
+    .leave-site-overlay .leave-site .close-sign {
+      top: -50px;
+      right: 10px;
+      position: absolute; }
+      .leave-site-overlay .leave-site .close-sign:hover {
+        cursor: pointer; }
+      .leave-site-overlay .leave-site .close-sign i {
+        color: #1FDBC5;
+        font-size: 32px;
+        display: inline-block;
+        background-color: #2c2c2c;
+        border: solid 4px #0A0A0A;
+        border-radius: 50%;
+        padding-left: 3px;
+        padding-right: 3px; }
+    .leave-site-overlay .leave-site i {
+      font-size: 200px;
+      color: #1FDBC5;
+      margin-left: 10px;
+      position: absolute; }
+    .leave-site-overlay .leave-site p {
+      font-family: font1;
+      color: white;
+      font-size: 24px;
+      margin-left: 90px;
+      position: relative;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px; }
+      .leave-site-overlay .leave-site p i {
+        color: #1FDBC5;
+        line-height: 1;
+        text-decoration: none;
+        font-size: 32px;
+        background-color: #1c1c1c;
+        border: solid 4px #0A0A0A;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 0;
+        margin-left: 3px;
+        margin-right: 3px;
+        position: relative; }
+    .leave-site-overlay .leave-site .continue-to {
+      background-color: #1c1c1c;
+      border: solid 4px #0A0A0A;
+      border-radius: 5px;
+      color: #1FDBC5;
+      padding: 5px 30px;
+      bottom: 5px;
+      font-size: 32px;
+      line-height: 2.2; }
+      .leave-site-overlay .leave-site .continue-to:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background-color: #262626; }
+
+@media (max-width: 380px) {
+  .leave-site-overlay {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(18, 18, 18, 0.3);
+    z-index: 300;
+    top: 0; }
+    .leave-site-overlay .leave-site {
+      position: absolute;
+      height: auto;
+      width: 280px;
+      background-color: #121212;
+      top: 0;
+      border-radius: 25px;
+      border: solid 5px #1FDBC5;
+      left: calc(50% - 140px);
+      top: calc(50% - 143px); }
+      .leave-site-overlay .leave-site .close-sign {
+        top: -50px;
+        right: 30px;
+        position: absolute; }
+        .leave-site-overlay .leave-site .close-sign i {
+          color: #1FDBC5;
+          font-size: 32px;
+          display: inline-block;
+          background-color: #2c2c2c;
+          border: solid 4px #0A0A0A;
+          border-radius: 50%;
+          padding-left: 3px;
+          padding-right: 3px; }
+      .leave-site-overlay .leave-site i {
+        font-size: 200px;
+        color: #1FDBC5;
+        margin-left: 10px;
+        position: absolute; }
+      .leave-site-overlay .leave-site p {
+        font-family: font1;
+        color: white;
+        font-size: 24px;
+        margin-left: 90px;
+        position: relative;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px; }
+        .leave-site-overlay .leave-site p i {
+          color: #1FDBC5;
+          line-height: 1;
+          text-decoration: none;
+          font-size: 32px;
+          background-color: #1c1c1c;
+          border: solid 4px #0A0A0A;
+          border-radius: 50%;
+          padding: 5px;
+          margin: 0;
+          margin-left: 3px;
+          margin-right: 3px;
+          position: relative; }
+      .leave-site-overlay .leave-site .continue-to {
+        background-color: #1c1c1c;
+        border: solid 4px #0A0A0A;
+        border-radius: 5px;
+        color: #1FDBC5;
+        padding: 5px 30px;
+        bottom: 5px;
+        font-size: 32px;
+        line-height: 2.2; }
+        .leave-site-overlay .leave-site .continue-to:hover {
+          cursor: pointer;
+          text-decoration: none;
+          background-color: #262626; } }
+@media (max-height: 400px) {
+  .leave-site-overlay {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(18, 18, 18, 0.3);
+    z-index: 300;
+    top: 0; }
+    .leave-site-overlay .leave-site {
+      position: absolute;
+      height: auto;
+      width: 280px;
+      background-color: #121212;
+      top: 0;
+      border-radius: 25px;
+      border: solid 5px #1FDBC5;
+      left: calc(50% - 140px);
+      top: calc(50% - 143px); }
+      .leave-site-overlay .leave-site .close-sign {
+        top: 0;
+        right: -10px;
+        position: absolute; }
+        .leave-site-overlay .leave-site .close-sign i {
+          color: #1FDBC5;
+          font-size: 32px;
+          display: inline-block;
+          background-color: #2c2c2c;
+          border: solid 4px #0A0A0A;
+          border-radius: 50%;
+          padding-left: 3px;
+          padding-right: 3px; }
+      .leave-site-overlay .leave-site i {
+        font-size: 200px;
+        color: #1FDBC5;
+        margin-left: 10px;
+        position: absolute; }
+      .leave-site-overlay .leave-site p {
+        font-family: font1;
+        color: white;
+        font-size: 24px;
+        margin-left: 90px;
+        position: relative;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px; }
+        .leave-site-overlay .leave-site p i {
+          color: #1FDBC5;
+          line-height: 1;
+          text-decoration: none;
+          font-size: 32px;
+          background-color: #1c1c1c;
+          border: solid 4px #0A0A0A;
+          border-radius: 50%;
+          padding: 5px;
+          margin: 0;
+          margin-left: 3px;
+          margin-right: 3px;
+          position: relative; }
+      .leave-site-overlay .leave-site .continue-to {
+        background-color: #1c1c1c;
+        border: solid 4px #0A0A0A;
+        border-radius: 5px;
+        color: #1FDBC5;
+        padding: 5px 30px;
+        bottom: 5px;
+        font-size: 32px;
+        line-height: 2.2; }
+        .leave-site-overlay .leave-site .continue-to:hover {
+          cursor: pointer;
+          text-decoration: none;
+          background-color: #262626; } }
 .top-line {
   position: absolute;
   height: 1px;
@@ -1098,7 +1359,7 @@ body {
         font-family: font3;
         font-size: 21px;
         line-height: 2;
-        margin-left: 28px; }
+        margin-left: 14px; }
   .menu-overlay .close-btn {
     position: absolute;
     background-color: #121212;
