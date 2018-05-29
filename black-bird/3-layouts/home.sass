@@ -1,0 +1,88 @@
+.placeholder
+  +hide-text
+
+.home-wrap
+  display: flex
+  min-height: 100vh
+
+
+  @media (max-width: 950px)
+    display: block
+
+    .page-border
+      border: 0px
+
+.home-sections
+  flex: 1
+
+  section
+    padding: 30px 0
+
+  .flex
+    display: flex
+    flex-direction: row
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .order-first
+    order: -1
+
+.page-border
+  border: solid 1px black
+  margin-right: 5px
+  margin-bottom: 5px
+  margin-right: 0
+  overflow: hidden
+
+
+//columns
+
+.col-1
+  max-width: 300px
+  margin: 0 10px
+  //background: pink
+
+.col-2
+  max-width: 620px
+  margin: 0 10px
+  //background: honeydew
+
+.col-50
+  width: 50%
+  //background: yellow
+
+
+@media (max-width: 815px)
+  .home-sections .flex
+    display: block
+
+    .col-1
+      max-width: 100%
+      text-align: center
+
+    .col-50
+      width: auto
+
+
+
+h2
+  font-family: Georgia
+  font-size: 40px
+  font-style: italic
+  border-bottom: solid 2px black
+  padding: 0 5px
+  margin-bottom: 2px
+  margin-right: 0
+
+h3
+  margin-bottom: 0
+
+
+.h2-box
+  border-bottom: solid 2px black
+  width: 100%
+  margin-left: 5px

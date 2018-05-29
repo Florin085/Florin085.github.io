@@ -1,4 +1,4 @@
-var $backToTop = $(".project-back-to-top");
+var $backToTop = $(".up-sign");
 $backToTop.hide();
 
 

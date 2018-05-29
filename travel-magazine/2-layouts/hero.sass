@@ -1,0 +1,200 @@
+.titles
+  margin-top: 200px
+  padding-left: 4vw
+  border-right: solid 2px rgba(255, 255, 255, 0.8)
+  display: inline-block
+  width: 27vw
+  position: absolute
+  top: 60%
+  left: 0
+  transform: translateY(-60%)
+  color: black
+
+  .active-title
+    color: white
+    font-weight: 500
+    border-right: solid 5px white
+    margin-bottom: 0
+
+  p
+    font-family: font1
+    color: transparentize(white, 0.2)
+    font-size: 2.2vw
+    margin-bottom: 0
+
+    &:hover
+      text-decoration: underline
+      cursor: pointer
+
+.active-title
+  color: white
+  font-weight: 500
+  border-right: solid 5px white
+  margin-bottom: 0
+
+
+.hero
+  margin: 0
+  padding: 0
+
+  .titles
+    //margin-top: 200px
+    padding-left: 4vw
+    border-right: solid 2px rgba(255, 255, 255, 0.8)
+    display: inline-block
+    width: 27vw
+    position: absolute
+    top: 60%
+    left: 0
+    transform: translateY(-60%)
+
+  .active-title
+    color: white
+    font-weight: 500
+    border-right: solid 5px white
+    margin-bottom: 0
+
+    .active-title
+      color: white
+      font-weight: 500
+      border-right: solid 5px white
+      margin-bottom: 0
+
+    p
+      font-family: font1
+      color: transparentize(white, 0.2)
+      font-size: 2.2vw
+      margin-bottom: 0
+
+      &:hover
+        text-decoration: underline
+        cursor: pointer
+
+  .hero-read-article
+    margin-left: 30vw
+    padding-top: 65vh
+
+    p
+      font-family: font1
+      color: transparentize(white, 0.1)
+      font-size: 1.5vw
+
+    a
+      font-family: font3
+      color: white
+      font-size: 5vw
+
+      &:hover
+
+
+
+
+  .hero-1
+    height: 100vh
+    width: 100%
+    background-image: url(4-images/Hero-1-BG.png)
+    background-size: 100% 100%
+
+
+
+  .hero-2
+    height: 100vh
+    width: 100%
+    background-image: url(4-images/Hero-2-BG.png)
+    background-size: 100% 100%
+
+    .titles
+
+      .active-title
+        color: white
+        font-weight: 500
+        border-right: solid 5px white
+        margin-bottom: 0
+
+
+  .hero-3
+    height: 100vh
+    width: 100%
+    background-image: url(4-images/Hero-3-BG.png)
+    background-size: 100% 100%
+
+    .titles
+
+      .active-title
+        color: white
+        font-weight: 500
+        border-right: solid 5px white
+        margin-bottom: 0
+
+  .hero-4
+    height: 100vh
+    width: 100%
+    background-image: url(4-images/Hero-4-BG.png)
+    background-size: 100% 100%
+
+
+    .titles
+
+      .active-title
+        color: white
+        font-weight: 500
+        border-right: solid 5px white
+        margin-bottom: 0
+
+    .active-hero
+      display: inline-block
+
+
+@media (max-width: 768px)
+
+  .hero
+
+    .hero-1
+      background-size: cover
+
+    .hero-2
+      background-size: cover
+
+    .hero-3
+      background-size: cover
+
+    .hero-4
+      background-size: cover
+
+    .titles
+      display: none
+
+    .titles-circles
+      display: none
+      width: 27vw
+      position: absolute
+      top: 60%
+      transform: translateY(-60%)
+
+      .circle
+        border: solid 2px rgba(255, 255, 255, 0.8)
+        height: 7.5vw
+        width: 7.5vw
+        border-radius: 100%
+        margin-top: 10px
+        margin-bottom: 20px
+        margin-left: 10vw
+
+      .active-circles
+        background-color: white
+        border: solid 2px white
+
+    .hero-read-article
+      margin-left: 25vw
+      padding-top: 55vh
+
+      p
+        font-family: font1
+        color: transparentize(white, 0.1)
+        font-size: 3.5vw
+
+      a
+        font-family: font3
+        color: white
+        font-size: 9vw
+        font-weight: bold

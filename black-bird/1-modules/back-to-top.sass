@@ -1,0 +1,23 @@
+.back-to-top
+  position: fixed
+  bottom: 0
+  right: 0
+  display: none
+  background-color: rgba(white, 0)
+  font-size: 0
+
+.back-to-top:hover
+  cursor: pointer
+
+@media (max-width: 950px)
+
+  .back-to-top
+    display: inline-block
+    font-size: 2em
+    z-index: 2
+    margin-right: 2%
+    margin-bottom: 2%
+    transform: scale(1)
+
+    &:hover
+      transform: scale(1.2)

@@ -1,0 +1,127 @@
+.custom-dots
+  //margin-top: 200px
+  padding-left: 4vw
+  border-right: solid 2px rgba(255, 255, 255, 0.8)
+  display: inline-block
+  width: 27vw
+  position: absolute
+  top: 60%
+  left: 0
+  transform: translateY(-60%)
+  color: black
+
+  .slick-active
+    color: white
+    font-weight: 500
+    border-right: solid 5px white
+    margin-bottom: 0
+
+    button
+      color: white
+      font-weight: 500
+
+
+  li
+    font-family: font1
+    color: transparentize(white, 0.2)
+    font-size: 1.8vw
+    margin-bottom: 0
+    cursor: pointer
+    list-style: none
+    //margin-top: 30px
+    margin-top: 1vh
+
+    button
+      //font-size: 2.2vw
+      //line-height: 0
+      display: block
+      //width: 20px
+      //height: 20px
+      padding: 5px
+      cursor: pointer
+      color: transparentize(white, 0.2)
+      border: 0
+      outline: none
+      background: transparent
+      text-align: left
+
+      &:hover,
+        text-decoration: underline
+        cursor: pointer
+
+
+      &:hover:before, &:focus:before
+        opacity: 1
+
+
+
+@media (max-width: 768px)
+
+  .custom-dots
+    //margin-top: 200px
+    padding-left: 4vw
+    border-right: none
+    display: inline-block
+    width: 27vw
+    position: absolute
+    top: 60%
+    left: 0
+    transform: translateY(-60%)
+    color: black
+
+    .slick-active
+      color: transparent
+      //background-color: white
+      border-right: none
+
+      //button
+        color: white
+        font-weight: 500
+
+      button
+        height: 7.5vw
+        width: 7.5vw
+        display: inline-block
+        padding: 50
+        cursor: pointer
+        color: transparent
+        border-radius: 100%
+        margin-top: 10px
+        margin-bottom: 20px
+        margin-left: 5vw
+        border: solid 2px rgba(255, 255, 255, 0.8)
+        +hide-text
+        background-color: transparentize(white, 0.1)
+
+
+    li
+      font-family: font1
+      color: transparentize(white, 0.2)
+      font-size: 2.2vw
+      margin-bottom: 0
+      cursor: pointer
+      list-style: none
+      //margin-top: 30px
+      margin-top: 1vh
+
+      button
+        height: 7.5vw
+        width: 7.5vw
+        display: inline-block
+        padding: 50
+        cursor: pointer
+        color: transparent
+        border-radius: 100%
+        margin-top: 10px
+        margin-bottom: 20px
+        margin-left: 5vw
+        border: solid 2px rgba(255, 255, 255, 0.8)
+        +hide-text
+
+        &:hover,
+          text-decoration: underline
+          cursor: pointer
+
+
+        &:hover:before, &:focus:before
+          opacity: 1
